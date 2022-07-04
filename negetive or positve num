@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "plz insert number:" n
+if [ $n -ge 0 ] 
+then 
+echo "$n is poxitive"
+fi
+if test $n -lt 0
+then
+echo "$n is negetive " 
+fi
