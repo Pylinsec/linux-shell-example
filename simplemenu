@@ -1,0 +1,26 @@
+#!/bin/bash
+#this script is simple menu with read command and case command 
+while :
+do
+ echo "_________________________________________________________________________________"
+echo "Main Menu"
+echo "_________________________________________________________________________________"
+	echo "1 --> show todays date/time"
+	echo "2 --> show file in current directoy"
+	echo "3 --> make directory with name 3 in current directory"
+	echo "4 --> make file with name 4 in current directory"
+	echo "5 --> show calender"
+	echo "6 --> exit/stop"
+echo "================================================================================="
+	echo -n "Enter your choice [1-6]:"
+	read choice
+case $choice in 
+	1)echo "today is `date`,press any key ...";read;;
+	2)echo "file in `pwd`" ls -l;echo "press any key..";read;;
+	3)mkdir 3;echo " make directory with name 3 was successfull press any key ...";read;; 
+	4)touch 4;echo "make file in `pwd` was successfull press any key ...";read ;;
+	5)cal;echo "press any key.."; read ;;
+	6)echo "bye bye i wish i see you soon";exit ;;
+	*)echo "OOPSS!!! please enter choice 1,2,3,4,5 or 6 press any key ...";read;;
+esac
+done

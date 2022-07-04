@@ -1,0 +1,8 @@
+#!/bin/bash
+#get tow variable from user and show them
+
+read -p "plz inser your name: " name
+echo "your name is $name "
+read -p "plz inser your age: " age
+echo "$name is $age years old"
+
